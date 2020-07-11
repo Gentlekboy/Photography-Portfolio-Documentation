@@ -176,9 +176,20 @@
           <hr class="notop" />
         </div>
         <pre class="prettyprint lang-html linenums">
-- images                      (All Images)
-- style.css                   (Template CSS)
-- index.html                  (Template HTML)</pre
+-css
+  -bootstrap
+    -bootstrap.min.css              (Bootstrap CSS)
+  -style.css                        (Main CSS)
+
+- images                            (All Images)
+
+- js
+  -bootstrap
+    -bootstrap.min.js               (Bootstrap JS)
+  -popper
+    -popper.min.js                  (Popper JS)
+
+- index.html                        (Template HTML)</pre
         >
         <p>
           &nbsp;
@@ -222,7 +233,7 @@
           <hr class="notop" />
         </div>
         <div>
-          The CSS used in this template is the style.css file and it follows the structure below:
+          The main CSS in styles.css follows the structure below:
         </div>
         <div>
           &nbsp;
@@ -231,6 +242,20 @@
 selector{
   property: value;
 }
+</pre
+        >
+        <div>
+          The path to all CSS files are found within the head section in this format:
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <pre class="prettyprint lang-html linenums">
+&lt;!-- Main CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+
+&lt;!-- Bootstrap CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/bootstrap/bootstrap.min.css&quot;&gt;
 </pre
         >
       </section>
@@ -244,20 +269,15 @@ selector{
           &nbsp;
         </div>
         <div>
-          All the JavaScript libraries and files are included at the bottom of
-          the HTML page and they include:
+          Links to JavaScript files are included before the end of the HTML body tag:
         </div>
         <div>
           <pre class="prettyprint lang-html linenums">
 &lt;!-- Popper JS --&gt;
-&lt;script src=&quot;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&quot; 
-integrity=&quot;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&quot; 
-crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;link src=&quot;js/popper/popper.min.js&quot;&gt;
 
 &lt;!-- Bootstrap JS --&gt;
-&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js&quot; 
-integrity=&quot;sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/&quot; 
-crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt; 
+&lt;link src=&quot;js/bootstrap/bootstrap.min.js&quot;&gt;
 </pre
           >
         </div>
@@ -293,23 +313,23 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
         </div>
         <pre class="prettyprint lang-html linenums">
 &lt;a href=&quot;http://instagram.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-  &lt;img src=&quot;images/instagram.png&quot; alt=&quot;instagram&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;img src=&quot;images/social-media.png&quot; alt=&quot;instagram&quot; class=&quot;img-fluid&quot;&gt;
 &lt;/a&gt;
 
 &lt;a href=&quot;http://facebook.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-  &lt;img src=&quot;images/facebook.png&quot; alt=&quot;facebook&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;img src=&quot;images/social-media.png&quot; alt=&quot;facebook&quot; class=&quot;img-fluid&quot;&gt;
 &lt;/a&gt;
 
 &lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-  &lt;img src=&quot;images/twitter.png&quot; alt=&quot;twitter&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;img src=&quot;images/social-media.png&quot; alt=&quot;twitter&quot; class=&quot;img-fluid&quot;&gt;
 &lt;/a&gt;
 
 &lt;a href=&quot;http://linkedin.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-  &lt;img src=&quot;images/linkedin.png&quot; alt=&quot;linkedin&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;img src=&quot;images/social-media.png&quot; alt=&quot;linkedin&quot; class=&quot;img-fluid&quot;&gt;
 &lt;/a&gt;
 
 &lt;a href=&quot;http://youtube.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-  &lt;img src=&quot;images/youtube.png&quot; alt=&quot;youtube&quot; class=&quot;img-fluid&quot;&gt;
+  &lt;img src=&quot;images/social-media.png&quot; alt=&quot;youtube&quot; class=&quot;img-fluid&quot;&gt;
 &lt;/a&gt;
           </pre>
         <div>
@@ -346,9 +366,27 @@ crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
           &nbsp;
         </div>
         <div>
-          <strong>Bootstrap</strong> -
+          <strong>Bootstrap CSS</strong> -
           <a href="https://v5.getbootstrap.com/" target="_blank"
-            >https://v5.getbootstrap.com/</a
+            >https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/#css</a
+          >
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <strong>Bootstrap JS</strong> -
+          <a href="https://v5.getbootstrap.com/" target="_blank"
+            >https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/#js</a
+          >
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <strong>Popper JS</strong> -
+          <a href="https://v5.getbootstrap.com/" target="_blank"
+            >https://popper.js.org/</a
           >
         </div>
       </section>
